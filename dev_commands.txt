@@ -1,0 +1,25 @@
+# Installation
+#=======================
+# Install Anaconda (via website if Windows OS)
+
+# Create Conda env and install required libs
+conda create -n detectron_env python=3.9
+conda activate detectron_env
+conda install pytorch torchvision torchaudio cudatoolkit=11.0 -c pytorch
+pip install cython
+
+# Download Detectron2 git repo and install required libs
+git clone https://github.com/facebookresearch/detectron2.git
+cd detectron2
+pip install -e .
+pip install opencv-python
+
+
+
+# Troubleshooting
+#=======================
+# A) Unable to find detection module in VS Code IDE
+		Type Ctrl-Shift-P
+		Type python s          (in the search box)
+		Select the recently created conda env "detectron_env"
+#   If above doesn't work, open Anaconda Navigator and open VS Code via that + conda env "detectron_env"

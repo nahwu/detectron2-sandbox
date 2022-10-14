@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Detectron2 library. Developer to self-install from its Git Repo
+detectron2/
+
+# VS Code IDE
+.vscode/
